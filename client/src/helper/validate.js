@@ -30,6 +30,12 @@ export async function registerValidate(values) {
   return errors;
 }
 
+
+// Validate Profile
+export async function profileValidate(values) {
+  const errors = emailVerify({}, values);
+  return errors;
+}
 //************************************************************ */
 
 //Validate password
